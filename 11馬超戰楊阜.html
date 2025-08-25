@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>會說話的石頭</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --brand: #0077b6;
+      --bg: #f8f9fa;
+      --card: #ffffff;
+    }
+    html, body { background: var(--bg); }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      line-height: 1.7;
+    }
+    .container-narrow { max-width: 760px; }
+    .page-header {
+      text-align: center;
+      padding: 48px 0 16px;
+    }
+    .brand-badge {
+      display: inline-block;
+      font-weight: 700;
+      letter-spacing: .08em;
+      color: var(--brand);
+      background: rgba(0,119,182,.08);
+      border: 1px solid rgba(0,119,182,.15);
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: .85rem;
+    }
+    .card {
+      border-radius: 18px;
+      border: 1px solid rgba(0,0,0,.06);
+      box-shadow: 0 10px 25px rgba(0,0,0,.08);
+      overflow: hidden;
+    }
+    .hero {
+      background: radial-gradient(1200px 400px at 50% -80%, rgba(0,119,182,.12), transparent),
+                  radial-gradient(1000px 500px at 10% 120%, rgba(0,119,182,.08), transparent);
+      border-bottom: 1px solid rgba(0,0,0,.06);
+    }
+    .title {
+      color: var(--brand);
+      font-weight: 800;
+      letter-spacing: .02em;
+      margin-bottom: .35rem;
+    }
+    .subtitle {
+      color: #495057;
+      margin-bottom: 0;
+    }
+    .content p { font-size: 1.06rem; }
+    .meta {
+      font-size: .9rem;
+      color: #6c757d;
+    }
+    .footer-note {
+      text-align: center;
+      font-size: .9rem;
+      color: #6c757d;
+      margin: 36px 0 24px;
+    }
+
+    /* ✅ 修正表格樣式 */
+    table {
+      border-collapse: collapse;
+      margin: 0 auto;
+      width: 80%;
+    }
+    th, td {
+      border: 1px solid #000;
+      padding: 8px;
+      text-align: left;
+    }
+    thead {
+      background-color: #f0f0f0;
+    }
+    tbody tr:nth-child(odd) {
+      background-color: #ffffff;
+    }
+    tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    /* ✅ 表格響應式設計 */
+    .table-responsive {
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <main class="container container-narrow">
+    <div class="page-header">
+      <span class="brand-badge">馬超戰楊阜</span>
+    </div>
+
+    <article class="card">
+      <header class="hero p-4 p-md-5">
+        <h1 class="title display-6 mb-1">馬超戰楊阜</h1>
+        <p class="subtitle">會說話的石頭</p>
+      </header>
+
+      <!-- ✅ 圖片區塊（置中 + 美化） -->
+      <div class="text-center my-3">
+        <img src="image/011.jpg" 
+             alt="" 
+             class="img-fluid rounded shadow-sm" 
+             style="max-width:400px;">
+        <p class="mt-2 text-muted">圖 馬超戰楊阜</p>
+      </div>
+
+    
+
+      <div class="content p-4 p-md-5">
+        <p>
+          建安十八年八月，駐守在冀城的涼州刺史韋康等人向馬超投降，結果被殺。楊阜想反叛馬超，為故主韋康復仇。他對馬超稱自己喪妻，請假辦喪事。途中他向駐扎在歷城的表兄天水人撫夷將軍姜敘求援，姜敘在老母（即楊阜舅母）鼓勵下，與同郡參軍事趙昂、尹奉、武都人李俊等合謀，楊阜亦結交鄉人姜隱、姚瓊、孔信、武都人王靈共討馬超，又使從弟楊謨等至冀城告訴被馬超拘禁的從弟楊岳，並結交安定人梁寬、南安人趙衢、龐恭等為內應。薑母願為此事捨身，要姜敘不要為孝所累。
+此時馬超要挾趙昂為自己效力，留其嫡子趙月為質子，但依然不是很信任趙昂。馬超妻楊氏聽說趙昂妻王異是個有品德的人，於是請她和自己一起喝酒吃飯。王異趁機取信於楊氏，與其相交，趙昂也因而為馬超所信。趙昂已與楊阜定計，對王異說：「我們如此謀劃，必然萬全，但趙月怎麼辦？」王異厲聲答為了忠義雪恥，喪命都不要緊，何況一個兒子？並舉項託、顏淵雖短命卻存義於世的例子，趙昂認可。
+楊阜等人定計後，九月，楊阜、姜敘進兵入鹵城，趙昂、尹奉據祁山以討馬超。馬超聞之大怒，趙衢趁機按姜敘母事先定下的計策，勸馬超親自出擊。馬超與馬岱、龐德離城前去平叛，趙衢、梁寬即釋放楊岳，閉冀城門，殺馬超妻兒。
+馬超不能克鹵城，撤回冀城，不得入，失據，過鹵城，又到歷城，當時傳聞馬超已奔漢中，故歷城無防備，卻以為姜敘軍回來了，馬超入城抓住姜敘老母，被其大罵，怒殺之，又殺姜敘子，燒城而去。
+楊阜在戰鬥中五次被馬超所傷，同族兄弟七人被殺。馬超隨後與馬岱、龐德南奔漢中軍閥張魯，後又殺趙月。
+
+
+</p>
+        <p>
+          資料來源：https://reurl.cc/yAQ748  
+         </p>
+     <p class="meta" ><a href="index.html" target="">會說話的石頭<a></p>
+      </div>
+    </article>
+
+    <p class="footer-note">會說話的石頭</p>
+  </main>
+</body>
+</html>

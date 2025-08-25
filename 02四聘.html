@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Solar System — Demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --brand: #0077b6;
+      --bg: #f8f9fa;
+      --card: #ffffff;
+    }
+    html, body { background: var(--bg); }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      line-height: 1.7;
+    }
+    .container-narrow { max-width: 760px; }
+    .page-header {
+      text-align: center;
+      padding: 48px 0 16px;
+    }
+    .brand-badge {
+      display: inline-block;
+      font-weight: 700;
+      letter-spacing: .08em;
+      color: var(--brand);
+      background: rgba(0,119,182,.08);
+      border: 1px solid rgba(0,119,182,.15);
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: .85rem;
+    }
+    .card {
+      border-radius: 18px;
+      border: 1px solid rgba(0,0,0,.06);
+      box-shadow: 0 10px 25px rgba(0,0,0,.08);
+      overflow: hidden;
+    }
+    .hero {
+      background: radial-gradient(1200px 400px at 50% -80%, rgba(0,119,182,.12), transparent),
+                  radial-gradient(1000px 500px at 10% 120%, rgba(0,119,182,.08), transparent);
+      border-bottom: 1px solid rgba(0,0,0,.06);
+    }
+    .title {
+      color: var(--brand);
+      font-weight: 800;
+      letter-spacing: .02em;
+      margin-bottom: .35rem;
+    }
+    .subtitle {
+      color: #495057;
+      margin-bottom: 0;
+    }
+    .content p { font-size: 1.06rem; }
+    .meta {
+      font-size: .9rem;
+      color: #6c757d;
+    }
+    .footer-note {
+      text-align: center;
+      font-size: .9rem;
+      color: #6c757d;
+      margin: 36px 0 24px;
+    }
+
+    /* ✅ 修正表格樣式 */
+    table {
+      border-collapse: collapse;
+      margin: 0 auto;
+      width: 80%;
+    }
+    th, td {
+      border: 1px solid #000;
+      padding: 8px;
+      text-align: left;
+    }
+    thead {
+      background-color: #f0f0f0;
+    }
+    tbody tr:nth-child(odd) {
+      background-color: #ffffff;
+    }
+    tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    /* ✅ 表格響應式設計 */
+    .table-responsive {
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <main class="container container-narrow">
+    <div class="page-header">
+      <span class="brand-badge">四聘</span>
+    </div>
+
+    <article class="card">
+      <header class="hero p-4 p-md-5">
+        <h1 class="title display-6 mb-1">四聘</h1>
+        <p class="subtitle">會說話的石頭</p>
+      </header>
+
+      <!--  圖片區塊（置中 + 美化） -->
+      <div class="text-center my-3">
+        <img src="image/002-1.jpg" 
+             alt="" 
+             class="img-fluid rounded shadow-sm" 
+             style="max-width:400px;">
+        <p class="mt-2 text-muted">圖 1堯傳位給舜</p>
+      </div>
+
+      <!--  表格區塊，使用響應式設計 -->
+      <div class="table-responsive my-4">
+        <table>
+          <thead>
+            <tr>
+              <th>故事</th>
+              <th>君主</th>
+			  <th>賢者	</th>
+			  <th>地點/情境</th>
+			  <th>寓意</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>堯聘舜</td>
+              <td>堯帝</td>
+			  <td>舜</td>
+			  <td>歷山三年觀察</td>
+			  <td>德治比血統重要</td>
+            </tr>
+              <tr>
+              <td>商湯聘伊尹	</td>
+              <td>商湯	</td>
+			  <td>伊尹	</td>
+			  <td>有莘國夢境賢能召見	</td>
+			  <td>明君識人、以賢為用</td>
+            </tr>
+              <tr>
+              <td>文王聘姜太公	</td>
+              <td>周文王	</td>
+			  <td>姜子牙	</td>
+			  <td>渭水釣魚、八百步誠意	</td>
+			  <td>求賢若渴、禮賢下士</td>
+            </tr>
+			  <tr>
+              <td>劉備聘諸葛亮	</td>
+              <td>劉備	</td>
+			  <td>諸葛亮	</td>
+			  <td>草廬謀見、隆中對定策	</td>
+			  <td>君臣相遇、誠意認才</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="content p-4 p-md-5">
+        <p>堯傳位給舜</p>
+ <p>
+　　帝堯在位七十年，到了晚年的時候，因為自己的兒子沒有才德，便決定把帝位傳給天下最有德行的人。他要求四方族主共同推舉，大家一致舉薦舜。舜是很賢明而有才能的人，他是歷山（今山東濮陽）農夫瞽叟〔音鼓搜〕的兒子。父愛後妻，愛少子，常欲殺舜，舜依然對父母盡孝，對弟友愛。傳說他在那裡耕種，那裡的農人便對他退讓田界；他在那裡打魚，那裡的漁人便讓屋給他
+<P>堯舜禪讓</P>
+　　黃帝之後，堯和舜都是傳說中受人稱讚的共主。
+<P>帝堯治績</P>
+　　堯是一位仁愛謙讓、愛護百姓的領袖，所以，那時人民生活安定。到堯晚年時，黃河洪水為患，南方的三苗又時常作亂。堯聽說舜很有才德，便找舜來幫助治理政事，發覺他真是一個賢明能幹的人。後來，堯便把帝位傳給舜。
+<P>帝舜治績</P>
+　　舜在輔助堯時，已經把三苗的禍亂平定，但洪水仍是當時的大患。於是，他派禹去治平水災，並任用賢德的人才，使人民的生活得到改善。人們感激禹治水的功績，尊稱他「大禹」。舜臨死時，把帝位讓給禹。
+<P>禪讓制度</P>
+　　堯和舜不把帝位看作一家私有，而把它讓給賢能的人，史稱「禪讓」，為後人所稱道。
+<P>堯傳位給舜</P>
+　　帝堯在位七十年，到了晚年的時候，因為自己的兒子沒有才德，便決定把帝位傳給天下最有德行的人。他要求四方族主共同推舉，大家一致舉薦舜。舜是很賢明而有才能的人，他是歷山（今山東濮陽）農夫瞽叟〔音鼓搜〕的兒子。父愛後妻，愛少子，常欲殺舜，舜依然對父母盡孝，對弟友愛。傳說他在那裡耕種，那裡的農人便對他退讓田界；他在那裡打魚，那裡的漁人便讓屋給他住。堯便令兩個女兒娥皇、女英嫁給舜來觀察他的品德；又令九個兒子和他相處以考察他的才幹。堯使舜擔任各種官職，他都做得很好；派他去國都四面的城門招待賓客，賓客都尊敬他；讓他進入大山下茂密的森林裡，遇到大風大雷雨，他也不迷路。這樣經過了三年的考察，堯就用舜治理政事。堯死之後，舜就做他的繼承人，執行共主的職務。舜繼位後，建都蒲阪（今山西永濟），改國號虞
+</p>
+        
+        <p>
+          資料來源
+https://www.mers.hk/resource/secondary/history/junior/2009/teacher/support/history_info/dictionary/list1.html?utm_source=chatgpt.com
+ </p>
+<hr>
+
+  <!--  圖片區塊（置中 + 美化） -->
+      <div class="text-center my-3">
+        <img src="image/002-2.jpg" 
+             alt="" 
+             class="img-fluid rounded shadow-sm" 
+             style="max-width:400px;">
+        <p class="mt-2 text-muted">圖 成湯聘伊尹</p>
+      </div>
+ <p>
+  成湯聘伊尹
+ </p>
+ <p>
+ 湯，聽說有莘這個地方，有一個叫摯（後稱伊尹）的人，名聲很好。他時常利用有空的時間，跟大家談論堯舜時代的事情，說百姓要好過，就要有堯天舜日那樣，天下的老百姓才會幸福快樂。湯派人去找伊尹，但去了兩三次，沒見到他的人。湯，求賢的心就好像口渴的人一樣，急著想要見到他，於是帶著隨從去尋訪伊尹。
+他們見面的時候，伊尹剛剛才忙完農事，讓牛休息吃草，自己坐在旁邊跟大家聊天。湯，自己跟他初見面，卻覺得很投機。但一說是要請到自己身邊幫忙治理國家，伊尹卻拒絶了。經過三四次的努力，才感動他的心，伊尹才出來協助湯治理國家，並且打敗夏桀，建立商朝。 
+版本二
+成湯聽說伊尹在有莘那個地方種田，他平時喜歡談論堯舜治國的方法和精神，是個大賢人。湯立即帶著豐厚的大禮，想去把他聘請回來。可是前面兩次都沒遇到他，直到第三次才成功的把伊尹請出來。問題是，他身為諸侯不敢自用，就把伊尹獻給桀。結果桀只聽奸臣小人的話，聽不進賢臣的諫言，把伊尹還給湯。
+後來，桀更是荒淫無道，殺了關龍逢，眾人都不敢說話。湯派人去弔唁哭拜關龍逢，桀不高興，把湯關在夏臺那個地方，過了一段時間才把他放回國。
+這後面有湯看到獵人圍起四面的獸網捕殺飛禽走獸，勸人們拆去三面、只留一面的故事，這就是「網開一面」（開恩恕罪的意思）的由來。
+各國聽到湯王的仁慈，稱讚湯的德操，因此歸附他的有四十多國。
+桀，越惡，民不聊生。
+伊尹因為曾經在桀那裡做過事，知道他的弱點，建議湯帶領各諸侯國去征伐他。
+事成，流放桀去南巢。諸侯大會，眾諸侯推湯為天子，於是湯建立了商朝，建都在亳(音播)。 
+版本三
+湯問伊尹，治國和烹調哪個比較困難，他說治大國如烹小鮮。據傳伊尹是個手藝很好的廚師。
+
+ </p>
+ <P>
+ 資料來源
+https://museum.chiayi.gov.tw/Education/KojtiPoteryGuideBook/GB10/GB1002.html
+</P>
+<hr>
+  <!--  圖片區塊（置中 + 美化） -->
+      <div class="text-center my-3">
+        <img src="image/002-3.jpg" 
+             alt="" 
+             class="img-fluid rounded shadow-sm" 
+             style="max-width:400px;">
+        <p class="mt-2 text-muted">圖 文王聘姜太公（姜尚）</p>
+      </div>
+
+<p>文王聘姜太公（姜尚）</P>
+<p>渭水求賢是周文王訪覓姜太公的故事。名間傳說文王原本是派兒子姬發前去禮請姜太公，姬發來到渭水南邊，只見姜太公手拿魚竿，口中唸唸有詞：「釣釣釣，釣釣釣，大魚不到小魚到，來個蝦米瞎胡鬧」姬發知道言中有所指，回去稟告父王，文王一聽，馬上乘轎親自去聘請姜太公出山輔佐周室。姜太公見文王果真親自出馬，很是高興，就笑著對文王說：「大王若真有誠意，就請扶我上轎，並親自拉我進京。」文王愛才若渴，立刻親自扶姜子牙上轎，自己拉著轎車步行，不久就累得汗流浹背，寸步難行，坐倒在地上，姜子牙卻說，「再拉一程吧！」文王勉強站了起來，拼命又拉了幾步，喘著氣說，實在拉不動了！這時姜太公伸出手指一算說：你一共拉了我808步，我就保你周室江山808年」文王一聽，鼓足勇氣要再拉，姜太公說：「來不及了，說破就不靈驗了！」文王有點懊惱，也只能徒嘆奈何了！
+姜太公姜子牙是東海（現今河南許昌）人士。在商朝時當過小官，商末民不聊生，紂王暴政年年，姜子牙辭官隱居。並在河邊以長桿﹑短線﹑直勾背身而釣的奇妙方式去釣魚。靜待多年，最後感動了求賢心切的周文王，姜子牙隱居10年，當他83歲時，周文王再度到訪，在文王誠意請求下，姜子牙被拜為司馬，輔佐文王。因為周文王曾對姜子牙說：「您真是我的太公呀！」，故後人尊稱姜子牙為姜太公。  
+姜子牙老年得志，為周文王，周武王修文練武，勵精圖治，並策劃推翻商紂的暴政。公元前1066年率兵三萬，大敗商軍於牧野，為武王奠定周朝。因姜子牙輔佐武王滅商有功，被分封於齊（現今山東），是齊國的始祖。諡號為齊太公。
+周公，姓姬名旦輔佐周文王、武王、成王三朝功臣：他是周文王之子，周武王之弟，成王之叔。有庶兄管叔、蔡叔布散流言，說周公欺侮幼主，不久篡位。成王疑之。周公辭了相位，避居東國，心懷恐懼。一日，天降大風疾雷，擊開金匱，成王見了冊文，方知周公之忠，迎歸相位，誅了管叔、蔡叔，周室危而復安。王莽為人奸詐，陰有篡漢之意。恐人心不服，乃折節謙恭，禮賢下士，後自立為君，改國號曰「新」。                                                
+唐朝白居易曾寫了一首詩，感嘆好人也有被流言中傷的時候，壞人的偽善，也可蒙蔽眾人於一時。詩云： 周公恐懼流言日，王莽禮賢下士時。若是當年身先死，一生真僞有誰知？
+</P>
+<p>資料來源
+https://mulan.chhs.hcc.edu.tw/%E6%AD%B7%E5%8F%B2%E5%B0%8F%E6%95%85%E4%BA%8B/10%E5%91%A8%E6%96%87%E7%8E%8B%E8%88%87%E5%A7%9C%E5%A4%AA%E5%85%AC?utm_source=chatgpt.com
+</P>
+<hr>
+ <!--  圖片區塊（置中 + 美化） -->
+      <div class="text-center my-3">
+        <img src="image/002-4.jpg" 
+             alt="" 
+             class="img-fluid rounded shadow-sm" 
+             style="max-width:400px;">
+        <p class="mt-2 text-muted">圖 劉備三顧茅廬（聘諸葛亮）</p>
+      </div>
+<p>劉備三顧茅廬（聘諸葛亮）</P>
+<p>建安六年（201年），曹操既破袁紹，自南進擊劉備；劉備派遣麋竺、孫乾與劉表相聞，劉表自郊外迎接，以上賓之禮相待，增益其兵馬，使之屯兵新野。劉備向司馬徽請教世事。司馬徽說：「我這儒生是淺俗士人，怎麼會懂時勢事務？知道時勢事務的人都是英俊豪傑。在這地方，有臥龍（諸葛亮）、鳳雛（龐統）兩人。」徐庶見劉備，劉備器重，徐庶對劉備說：「諸葛孔明，是臥龍，劉將軍希望見到嗎？」；劉備答：「你與他一起過來吧。」；徐庶說：「諸葛亮這個人你需要親自去見他，不能由其他人去做，還委屈將軍您坐車去拜訪他。」建安十二年（207年）冬，劉備親自拜訪諸葛亮，三次才見到（史稱「三顧茅廬」）；劉備屏退別人說：「現在漢室衰敗，奸臣掌權，使當今聖上蒙受苦難。我不自量德行與能力，卻想要以天下蒼生為己任，欲以天下伸張大義，只是我的智術淺薄，到今天還一無所成。然而我的志向還沒消退，先生可以出謀畫策嗎？」
+諸葛亮遂向劉備陳述三分天下之計，分析：此時與曹操挾天子而令諸侯，此誠不可與之爭鋒；孫權據有江東，以歷三世，可以爲援而不可圖；又詳述荊州北據漢沔、利盡南海、東連吳會、西通巴蜀。此乃用武之國、戰略要地，而其主劉表不能守，此恐怕是上天賜予劉備；益州是漢高祖成就帝業之地，其主劉璋闇弱；更建議劉備等待時局有變，由荊州、益州進攻中原，此談話即後世稱為《草廬對》之文章。後來劉備與諸葛亮越來越親近，引起結拜兄弟關羽、張飛等人心有不滿，劉備對此解釋說：「我得到孔明，就像魚得到水，希望眾人別在這件事上做無謂的議論。」；關羽、張飛於是就此做罷
+
+</P>
+<p>資料來源
+https://zh.wikipedia.org/wiki/%E8%AF%B8%E8%91%9B%E4%BA%AE?utm_source=chatgpt.com</P>
+
+
+
+
+        <hr>
+        <p class="meta" ><a href="index.html" target="">會說話的石頭<a></p>
+      </div>
+    </article>
+
+    <p class="footer-note">會說話的石頭</p>
+  </main>
+</body>
+</html>

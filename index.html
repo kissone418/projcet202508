@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>會說話的石頭</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --brand: #0077b6;
+      --bg: #f8f9fa;
+      --card: #ffffff;
+    }
+    html, body { background: var(--bg); }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      line-height: 1.7;
+    }
+    .container-narrow { max-width: 760px; }
+    .page-header {
+      text-align: center;
+      padding: 48px 0 16px;
+    }
+    .brand-badge {
+      display: inline-block;
+      font-weight: 700;
+      letter-spacing: .08em;
+      color: var(--brand);
+      background: rgba(0,119,182,.08);
+      border: 1px solid rgba(0,119,182,.15);
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: .85rem;
+    }
+    .card {
+      border-radius: 18px;
+      border: 1px solid rgba(0,0,0,.06);
+      box-shadow: 0 10px 25px rgba(0,0,0,.08);
+      overflow: hidden;
+    }
+    .hero {
+      background: radial-gradient(1200px 400px at 50% -80%, rgba(0,119,182,.12), transparent),
+                  radial-gradient(1000px 500px at 10% 120%, rgba(0,119,182,.08), transparent);
+      border-bottom: 1px solid rgba(0,0,0,.06);
+    }
+    .title {
+      color: var(--brand);
+      font-weight: 800;
+      letter-spacing: .02em;
+      margin-bottom: .35rem;
+    }
+    .subtitle {
+      color: #495057;
+      margin-bottom: 0;
+    }
+    .content p { font-size: 1.06rem; }
+    .meta {
+      font-size: .9rem;
+      color: #6c757d;
+    }
+    .footer-note {
+      text-align: center;
+      font-size: .9rem;
+      color: #6c757d;
+      margin: 36px 0 24px;
+    }
+
+    /* ✅ 修正表格樣式 */
+    table {
+      border-collapse: collapse;
+      margin: 0 auto;
+      width: 80%;
+    }
+    th, td {
+      border: 1px solid #000;
+      padding: 8px;
+      text-align: left;
+    }
+    thead {
+      background-color: #f0f0f0;
+    }
+    tbody tr:nth-child(odd) {
+      background-color: #ffffff;
+    }
+    tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    /* ✅ 表格響應式設計 */
+    .table-responsive {
+      overflow-x: auto;
+    }
+	
+	/* 去除超連結的下劃線 */
+        a {
+            text-decoration: none;
+        }
+        /* 可選：當鼠標懸停時，給連結添加顏色變化 */
+        a:hover {
+            color: #007BFF;
+			}
+		td {
+            white-space: nowrap;
+        }
+  </style>
+</head>
+<body>
+  <main class="container container-narrow">
+    <div class="page-header">
+      <span class="brand-badge">會說話的石頭</span>
+    </div>
+
+    <article class="card">
+      <header class="hero p-4 p-md-5">
+        <h1 class="title display-6 mb-1">會說話的石頭</h1>
+        <p class="subtitle">石頭的文化之旅</p>
+      </header>
+
+      <!--  圖片區塊（置中 + 美化） -->
+      <div class="text-center my-3">
+        <img src="image/002-1.jpg" 
+             alt="" 
+             class="img-fluid rounded shadow-sm" 
+             style="max-width:400px;">
+        <p class="mt-2 text-muted"></p>
+      </div>
+
+      <!--  表格區塊，使用響應式設計 -->
+      <div class="table-responsive my-4">
+        <table>
+        <tr>
+            <td><a href="01三多.html" target="_blank">01三多</a></td>
+            <td><a href="02四聘.html" target="_blank">02四聘</a></td>
+            <td><a href="03空城計.html" target="_blank">03空城計</a></td>
+			<td><a href="04漁讀耕樵.html" target="_blank">04漁讀耕樵</a></td>
+			<td><a href="05樊江關.html" target="_blank">05樊江關</a></td>
+        </tr>
+        <tr>
+            <td><a href="06蓬萊仙島八仙會.html" target="_blank">06蓬萊仙島八仙會</a></td>
+            <td><a href="07三英戰呂布.html" target="_blank">07三英戰呂布</a></td>
+            <td><a href="08孔明初用兵.html" target="_blank">08孔明初用兵</a></td>
+			<td><a href="09孟達戰張郃.html" target="_blank">09孟達戰張郃</a></td>
+			<td><a href="10長板坡.html" target="_blank">10長板坡</a></td>
+        </tr>
+        <tr>
+            <td><a href="11馬超戰楊阜.html" target="_blank">11馬超戰楊阜</a></td>
+            <td><a href="12張飛戰馬超.html" target="_blank">12張飛戰馬超</a></td>
+            <td><a href="13張飛戰曹仁.html" target="_blank">13張飛戰曹仁</a></td>
+			<td><a href="14張飛戰嚴顏.html" target="_blank">14張飛戰嚴顏</a></td>
+			<td><a href="15華陽道放曹操.html" target="_blank">15華陽道放曹操</a></td>
+        </tr>
+		<tr>
+            <td><a href="16趙雲戰李典.html" target="_blank">16趙雲戰李典</a></td>
+            <td><a href="17魏延戰冷苞.html" target="_blank">17魏延戰冷苞</a></td>
+            <td><a href="18關公斬顏良.html" target="_blank">18關公斬顏良</a></td>
+			<td><a href="19蘇護反商.html" target="_blank">19蘇護反商</a></td>
+			<td><a href="20叱石成羊.html" target="_blank">20叱石成羊</a></td>
+        </tr>
+		<tr>
+            <td><a href="21狄青取真珠旗.html" target="_blank">21狄青取真珠旗</a></td>
+            <td><a href="22周⽂王吐⼦.html" target="_blank">22周⽂王吐⼦</a></td>
+            <td><a href="23孫臏拜⿁⾕⼦.html" target="_blank">23孫臏拜⿁⾕⼦</a></td>
+			<td><a href="24陳靖姑收妖.html" target="_blank">24陳靖姑收妖</a></td>
+			<td><a href="25雲中⼦進⽊劍.html" target="_blank">25雲中⼦進⽊劍</a></td>
+        </tr>
+		<tr>
+            <td><a href="26註⽣娘娘.html" target="_blank">26註⽣娘娘</a></td>
+            <td><a href="" target="_blank"></a></td>
+            <td><a href="" target="_blank"></a></td>
+			<td><a href="" target="_blank"></a></td>
+			<td><a href="" target="_blank"></a></td>
+        </tr>
+    </table>
+      </div>
+
+      <div class="content p-4 p-md-5">
+        
+		<p></P>
+
+
+
+
+        <hr>
+        <p class="meta" ><a href="index.html" target="">回目錄<a></p>
+      </div>
+    </article>
+
+    <p class="footer-note">會說話的石頭</p>
+  </main>
+</body>
+</html>

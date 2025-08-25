@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Solar System — Demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --brand: #0077b6;
+      --bg: #f8f9fa;
+      --card: #ffffff;
+    }
+    html, body { background: var(--bg); }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      line-height: 1.7;
+    }
+    .container-narrow { max-width: 760px; }
+    .page-header {
+      text-align: center;
+      padding: 48px 0 16px;
+    }
+    .brand-badge {
+      display: inline-block;
+      font-weight: 700;
+      letter-spacing: .08em;
+      color: var(--brand);
+      background: rgba(0,119,182,.08);
+      border: 1px solid rgba(0,119,182,.15);
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: .85rem;
+    }
+    .card {
+      border-radius: 18px;
+      border: 1px solid rgba(0,0,0,.06);
+      box-shadow: 0 10px 25px rgba(0,0,0,.08);
+      overflow: hidden;
+    }
+    .hero {
+      background: radial-gradient(1200px 400px at 50% -80%, rgba(0,119,182,.12), transparent),
+                  radial-gradient(1000px 500px at 10% 120%, rgba(0,119,182,.08), transparent);
+      border-bottom: 1px solid rgba(0,0,0,.06);
+    }
+    .title {
+      color: var(--brand);
+      font-weight: 800;
+      letter-spacing: .02em;
+      margin-bottom: .35rem;
+    }
+    .subtitle {
+      color: #495057;
+      margin-bottom: 0;
+    }
+    .content p { font-size: 1.06rem; }
+    .meta {
+      font-size: .9rem;
+      color: #6c757d;
+    }
+    .footer-note {
+      text-align: center;
+      font-size: .9rem;
+      color: #6c757d;
+      margin: 36px 0 24px;
+    }
+
+    /* ✅ 修正表格樣式 */
+    table {
+      border-collapse: collapse;
+      margin: 0 auto;
+      width: 80%;
+    }
+    th, td {
+      border: 1px solid #000;
+      padding: 8px;
+      text-align: left;
+    }
+    thead {
+      background-color: #f0f0f0;
+    }
+    tbody tr:nth-child(odd) {
+      background-color: #ffffff;
+    }
+    tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    /* ✅ 表格響應式設計 */
+    .table-responsive {
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <main class="container container-narrow">
+    <div class="page-header">
+      <span class="brand-badge">空城計</span>
+    </div>
+
+    <article class="card">
+      <header class="hero p-4 p-md-5">
+        <h1 class="title display-6 mb-1">空城計</h1>
+        <p class="subtitle">會說話的石頭</p>
+      </header>
+
+      <!-- ✅ 圖片區塊（置中 + 美化） -->
+      <div class="text-center my-3">
+        <img src="image/003.jpg" 
+             alt="" 
+             class="img-fluid rounded shadow-sm" 
+             style="max-width:400px;">
+        <p class="mt-2 text-muted">圖 空城計</p>
+      </div>
+
+      <!-- ✅ 表格區塊，使用響應式設計 -->
+      <div class="table-responsive my-4">
+        <table>
+    <thead>
+      <tr>
+        <th colspan="4">三十六計</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- 勝戰計 -->
+      <tr>
+        <td class="category">勝戰計</td>
+        <td>一 瞞天過海</td>
+        <td>二 圍魏救趙</td>
+        <td>三 借刀殺人</td>
+      </tr>
+      <tr class="content">
+        <td></td>
+        <td>四 以逸待勞</td>
+        <td>五 趁火打劫</td>
+        <td>六 聲東擊西</td>
+      </tr>
+
+      <!-- 敵戰計 -->
+      <tr>
+        <td class="category">敵戰計</td>
+        <td>七 無中生有</td>
+        <td>八 暗渡陳倉</td>
+        <td>九 隔岸觀火</td>
+      </tr>
+      <tr class="content">
+        <td></td>
+        <td>十 笑裏藏刀</td>
+        <td>十一 李代桃僵</td>
+        <td>十二 順手牽羊</td>
+      </tr>
+
+      <!-- 攻戰計 -->
+      <tr>
+        <td class="category">攻戰計</td>
+        <td>十三 打草驚蛇</td>
+        <td>十四 借屍還魂</td>
+        <td>十五 調虎離山</td>
+      </tr>
+      <tr class="content">
+        <td></td>
+        <td>十六 欲擒故縱</td>
+        <td>十七 拋磚引玉</td>
+        <td>十八 擒賊擒王</td>
+      </tr>
+
+      <!-- 混戰計 -->
+      <tr>
+        <td class="category">混戰計</td>
+        <td>十九 釜底抽薪</td>
+        <td>二十 混水摸魚</td>
+        <td>二一 金蟬脫殼</td>
+      </tr>
+      <tr class="content">
+        <td></td>
+        <td>二二 關門捉賊</td>
+        <td>二三 遠交近攻</td>
+        <td>二四 假道伐虢</td>
+      </tr>
+
+      <!-- 並戰計 -->
+      <tr>
+        <td class="category">並戰計</td>
+        <td>二五 偷梁換柱</td>
+        <td>二六 指桑罵槐</td>
+        <td>二七 假癡不癲</td>
+      </tr>
+      <tr class="content">
+        <td></td>
+        <td>二八 上屋抽梯</td>
+        <td>二九 樹上開花</td>
+        <td>三十 反客為主</td>
+      </tr>
+	  <!-- 敗戰計 -->
+      <tr>
+        <td class="category">敗戰計</td>
+        <td>三一 美人計</td>
+        <td>二 空城計</td>
+        <td>三三 反間計</td>
+      </tr>
+      <tr class="content">
+        <td></td>
+        <td>三四 苦肉計</td>
+        <td>三五 連環計</td>
+        <td>三六 走為上計</td>
+      </tr>
+    </tbody>
+  </table>
+      </div>
+
+      <div class="content p-4 p-md-5">
+        <p>
+          空城計是三十六計中的第三十二計，是一種以虛敵實的心理戰術。在緊急關頭，以大膽的冒險行動來造成敵人錯誤判斷，經常能夠達到排難解危的目的。空城計中所含的這種謀略思想，古人不僅用於守城，也用於敵眾我寡之遭遇戰。作為一種心理戰術，它不是用實力來戰勝敵人，而是透過研究敵人主帥的心理活動，以謀勝敵，驚退敵兵。使用時，必須要有足夠的膽量。
+正史中最早出現之空城計為春秋時代楚國令尹子元以兵車六百乘進攻鄭國，兵臨鄭都城下，鄭國大夫叔詹便大膽使用空城計，楚國軍隊見鄭都內城之閘門都沒有放下，議論一陣後撤退。（《s:春秋左氏傳/莊公#莊公二十八年》）。
+歷史上使用此計的尚有：趙雲、曹操、文聘………..等等，但最有名最為人所知的是《s:三國演義/第095回》「馬謖拒諫失街亭，武侯彈琴退仲達」的故事最廣為人知。蜀漢諸葛亮面對曹魏司馬懿大軍進襲，故意大開城門，坐在城上焚香操琴，讓司馬懿以為城內有伏兵，因而退兵。諸葛亮駐紮在陽平，派遣魏延等軍隊合兵向東，只留有一萬人守城。司馬懿親帥大軍二十萬抵擋諸葛亮，恰好與魏延軍隊錯道，直接開到陽平，距離諸葛亮六十里路時，其偵查哨兵說諸葛亮在城中兵少力弱。當時諸葛亮也獲知司馬懿馬上攻打陽平，大戰在前，考慮與魏延軍隊合兵，但是軍隊已經走遠，派人令軍隊回防，恐怕時間也來不及，將士失色，都不知道如何應對。諸葛亮神態自若，命令軍中都偃旗息鼓，不得妄出，又命令打開四方城門，出幾個人與城門前掃地。司馬懿經常說諸葛亮謹慎持重，但是很少見到其示弱，因此懷疑有伏兵，於是領軍向北依山而走。第二天吃飯的時候，諸葛亮與身邊的參謀說話時，拊手大笑，說「司馬懿必然認為我示弱，應該有埋伏，循山而逃」。等司馬懿的偵察兵回復情況稟報之，跟諸葛亮所言一致。後來司馬懿知曉後，非常後悔。
+
+        <p>
+          資料來源：維基百科，自由的百科全書  
+          
+        </p>
+        <hr>
+         <p class="meta" ><a href="index.html" target="">會說話的石頭<a></p>
+      </div>
+    </article>
+
+    <p class="footer-note">會說話的石頭</p>
+  </main>
+</body>
+</html>

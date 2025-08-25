@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>會說話的石頭</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --brand: #0077b6;
+      --bg: #f8f9fa;
+      --card: #ffffff;
+    }
+    html, body { background: var(--bg); }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      line-height: 1.7;
+    }
+    .container-narrow { max-width: 760px; }
+    .page-header {
+      text-align: center;
+      padding: 48px 0 16px;
+    }
+    .brand-badge {
+      display: inline-block;
+      font-weight: 700;
+      letter-spacing: .08em;
+      color: var(--brand);
+      background: rgba(0,119,182,.08);
+      border: 1px solid rgba(0,119,182,.15);
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: .85rem;
+    }
+    .card {
+      border-radius: 18px;
+      border: 1px solid rgba(0,0,0,.06);
+      box-shadow: 0 10px 25px rgba(0,0,0,.08);
+      overflow: hidden;
+    }
+    .hero {
+      background: radial-gradient(1200px 400px at 50% -80%, rgba(0,119,182,.12), transparent),
+                  radial-gradient(1000px 500px at 10% 120%, rgba(0,119,182,.08), transparent);
+      border-bottom: 1px solid rgba(0,0,0,.06);
+    }
+    .title {
+      color: var(--brand);
+      font-weight: 800;
+      letter-spacing: .02em;
+      margin-bottom: .35rem;
+    }
+    .subtitle {
+      color: #495057;
+      margin-bottom: 0;
+    }
+    .content p { font-size: 1.06rem; }
+    .meta {
+      font-size: .9rem;
+      color: #6c757d;
+    }
+    .footer-note {
+      text-align: center;
+      font-size: .9rem;
+      color: #6c757d;
+      margin: 36px 0 24px;
+    }
+
+    /* ✅ 修正表格樣式 */
+    table {
+      border-collapse: collapse;
+      margin: 0 auto;
+      width: 80%;
+    }
+    th, td {
+      border: 1px solid #000;
+      padding: 8px;
+      text-align: left;
+    }
+    thead {
+      background-color: #f0f0f0;
+    }
+    tbody tr:nth-child(odd) {
+      background-color: #ffffff;
+    }
+    tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    /* ✅ 表格響應式設計 */
+    .table-responsive {
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <main class="container container-narrow">
+    <div class="page-header">
+      <span class="brand-badge">張飛戰嚴顏</span>
+    </div>
+
+    <article class="card">
+      <header class="hero p-4 p-md-5">
+        <h1 class="title display-6 mb-1">張飛戰嚴顏</h1>
+        <p class="subtitle">會說話的石頭</p>
+      </header>
+
+      <!-- ✅ 圖片區塊（置中 + 美化） -->
+      <div class="text-center my-3">
+        <img src="image/014.jpg" 
+             alt="" 
+             class="img-fluid rounded shadow-sm" 
+             style="max-width:400px;">
+        <p class="mt-2 text-muted">圖 張飛戰嚴顏</p>
+      </div>
+
+    
+
+      <div class="content p-4 p-md-5">
+        <p>
+          嚴顏在劉備攻取成都，徑取漢川中登場。張飛軍的細作提到：巴郡太守嚴顔是蜀軍的名將，雖然年時已高但精力不減，擅使硬弓和大刀，同樣有萬夫莫敵之勇。居住在城郭，沒有竪起投降的旗幟。張飛教細作城下紮寨，對嚴顔說出自己的辱罵言語。嚴顔對劉璋差法正請劉備入西川，卻引狼入室而撫心自嘆。聽從身邊的軍士提議用以逸待勞對付張飛軍，嚴顔計從，教導軍士到城上防守。張飛軍的軍士在城下大叫開門，嚴顔放他進來問個究竟。軍士把張飛教他的辱罵言語對嚴顔說出，嚴顔大怒不會投降作回應，再借敵軍軍士之口回罵，並將軍士的耳鼻割去，放他回張飛軍。軍士返回到張飛軍如實稟報，張飛憤怒出戰，帶著士兵到巴郡下辱罵，急著攻城，但無功而返。次日張飛再次進攻，嚴顔在城上用弓射中張飛的頭盔，但一樣無功而返。數日的作戰，張飛也是無功而返。巴郡與周圍都是座山城，張飛登山高居視察，只見城中的平民搬石頭防守。張飛再次派人叫罵，但都是無功而返。多日的叫罵同樣堅城不出，張飛又想出計策，派士兵四處斬柴草，找出進城路徑，不要交戰。
+嚴顔不見張飛有所動靜而心疑，派十數人裝扮成張飛軍斬草混入敵軍中打聽。最後稟報打聽到張飛已經找到進城小路，並準備今晚攻打。嚴顔知道後大喜，並準備設伏的事宜。二更吃飽，三更在草叢埋伏，正當看到張飛在前引軍，引兵奪車和物資，誰知道張飛在嚴顔背後殺出。嚴顔與張飛單挑不敵，被張飛捉扯嚴顔的勒甲絛，把嚴顔扔在地上生擒。嚴顔手下捉住的是假張飛，張飛知道嚴顔用擊鼓為一起進攻信號，而張飛用鳴金為一起進攻，所有張飛麾下的軍士集結，半人以上的川軍只有倒戈投降。張飛接著殺進巴郡，後軍一早進入郡城。
+
+
+</p>
+        <p>
+          資料來源： https://reurl.cc/1O21l8 
+         </p>
+      <p class="meta" ><a href="index.html" target="">會說話的石頭<a></p>
+      </div>
+    </article>
+
+    <p class="footer-note">會說話的石頭</p>
+  </main>
+</body>
+</html>

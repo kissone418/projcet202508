@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>會說話的石頭</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --brand: #0077b6;
+      --bg: #f8f9fa;
+      --card: #ffffff;
+    }
+    html, body { background: var(--bg); }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      line-height: 1.7;
+    }
+    .container-narrow { max-width: 760px; }
+    .page-header {
+      text-align: center;
+      padding: 48px 0 16px;
+    }
+    .brand-badge {
+      display: inline-block;
+      font-weight: 700;
+      letter-spacing: .08em;
+      color: var(--brand);
+      background: rgba(0,119,182,.08);
+      border: 1px solid rgba(0,119,182,.15);
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: .85rem;
+    }
+    .card {
+      border-radius: 18px;
+      border: 1px solid rgba(0,0,0,.06);
+      box-shadow: 0 10px 25px rgba(0,0,0,.08);
+      overflow: hidden;
+    }
+    .hero {
+      background: radial-gradient(1200px 400px at 50% -80%, rgba(0,119,182,.12), transparent),
+                  radial-gradient(1000px 500px at 10% 120%, rgba(0,119,182,.08), transparent);
+      border-bottom: 1px solid rgba(0,0,0,.06);
+    }
+    .title {
+      color: var(--brand);
+      font-weight: 800;
+      letter-spacing: .02em;
+      margin-bottom: .35rem;
+    }
+    .subtitle {
+      color: #495057;
+      margin-bottom: 0;
+    }
+    .content p { font-size: 1.06rem; }
+    .meta {
+      font-size: .9rem;
+      color: #6c757d;
+    }
+    .footer-note {
+      text-align: center;
+      font-size: .9rem;
+      color: #6c757d;
+      margin: 36px 0 24px;
+    }
+
+    /* ✅ 修正表格樣式 */
+    table {
+      border-collapse: collapse;
+      margin: 0 auto;
+      width: 80%;
+    }
+    th, td {
+      border: 1px solid #000;
+      padding: 8px;
+      text-align: left;
+    }
+    thead {
+      background-color: #f0f0f0;
+    }
+    tbody tr:nth-child(odd) {
+      background-color: #ffffff;
+    }
+    tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    /* ✅ 表格響應式設計 */
+    .table-responsive {
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <main class="container container-narrow">
+    <div class="page-header">
+      <span class="brand-badge">孟達戰張郃</span>
+    </div>
+
+    <article class="card">
+      <header class="hero p-4 p-md-5">
+        <h1 class="title display-6 mb-1">孟達戰張郃</h1>
+        <p class="subtitle">會說話的石頭</p>
+      </header>
+
+      <!-- ✅ 圖片區塊（置中 + 美化） -->
+      <div class="text-center my-3">
+        <img src="image/009.jpg" 
+             alt="" 
+             class="img-fluid rounded shadow-sm" 
+             style="max-width:400px;">
+        <p class="mt-2 text-muted">圖 孟達戰張郃</p>
+      </div>
+
+    
+
+      <div class="content p-4 p-md-5">
+        <p>孟達反叛的動機有兩種版本，大體相近但有些許細微差異。第一個版本見於《三國志·明帝紀》注引《魏略》，第二個見於《晉書·宣帝紀》。
+《魏略》版本提及諸葛亮得知孟達在新城不安，計劃誘孟達倒戈歸蜀。他寫了幾封信給孟達，孟達也回復了。魏興太守申儀與孟達有隙，秘密報告魏廷孟達通蜀，但魏帝曹叡不信。當時屯宛城的司馬懿派參軍梁幾去調查孟達，又勸其入朝。孟達害怕了，於是作亂。[11]
+《晉書》版本證實孟達確與申儀有隙。諸葛亮計劃藉此誘孟達倒戈歸蜀，派郭模詐降並趁機向申儀漏洩孟達的圖謀，想因此促使孟達叛魏。孟達得知事已泄，立即計劃作亂。當時屯宛城的司馬懿擔心孟達迅速作亂，寫信穩住他：「將軍昔日離開劉備，託身國家，國家委任將軍守邊圖謀蜀國，可見國家信任你。蜀人愚蠢，深恨將軍。諸葛亮希望你歸蜀，是他無計可施了。郭模告訴申儀的不是小事，諸葛亮怎能輕易讓他洩露？如此危險的舉動不難明白。」孟達得信大喜，在作亂與否之間猶豫不決。司馬懿趁機秘密率宛城本部軍馬進軍新城。司馬懿部將們建議先觀察孟達動向再進軍，但司馬懿答道：「孟達無信義，他既然因生疑而猶豫，我們應當抓緊這次機會除掉他。」司馬懿軍隨後急行軍，8天後即抵達新城。[12]
+蜀漢和東吳也出兵支援孟達，分別到了西城安橋和木闌塞。司馬懿分派諸將以應之。[13]申儀也絕蜀道，使得蜀救兵不能到達。[14]
+戰前，孟達寫信給諸葛亮，同意助蜀，且預言司馬懿不會前來。但八天後司馬懿軍到後，孟達再寫信給諸葛亮，表示震驚和難以置信司馬懿竟然才八天就到了新城。孟達以新城下轄三面環水的上庸城為基，建起木柵以自守。司馬懿軍涉水毀柵，到了上庸城外。司馬懿隨後分兵八面攻城，誘使孟達外甥鄧賢和部將李輔在圍城十六日後開門投降。孟達被俘殺，傳首京城洛陽。[15][16][17]
+
+
+</p>
+        <p>
+          資料來源：https://reurl.cc/ek6dVj 
+         </p>
+       <p class="meta" ><a href="index.html" target="">會說話的石頭<a></p>
+      </div>
+    </article>
+
+    <p class="footer-note">會說話的石頭</p>
+  </main>
+</body>
+</html>

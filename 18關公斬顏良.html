@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>會說話的石頭</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --brand: #0077b6;
+      --bg: #f8f9fa;
+      --card: #ffffff;
+    }
+    html, body { background: var(--bg); }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      line-height: 1.7;
+    }
+    .container-narrow { max-width: 760px; }
+    .page-header {
+      text-align: center;
+      padding: 48px 0 16px;
+    }
+    .brand-badge {
+      display: inline-block;
+      font-weight: 700;
+      letter-spacing: .08em;
+      color: var(--brand);
+      background: rgba(0,119,182,.08);
+      border: 1px solid rgba(0,119,182,.15);
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: .85rem;
+    }
+    .card {
+      border-radius: 18px;
+      border: 1px solid rgba(0,0,0,.06);
+      box-shadow: 0 10px 25px rgba(0,0,0,.08);
+      overflow: hidden;
+    }
+    .hero {
+      background: radial-gradient(1200px 400px at 50% -80%, rgba(0,119,182,.12), transparent),
+                  radial-gradient(1000px 500px at 10% 120%, rgba(0,119,182,.08), transparent);
+      border-bottom: 1px solid rgba(0,0,0,.06);
+    }
+    .title {
+      color: var(--brand);
+      font-weight: 800;
+      letter-spacing: .02em;
+      margin-bottom: .35rem;
+    }
+    .subtitle {
+      color: #495057;
+      margin-bottom: 0;
+    }
+    .content p { font-size: 1.06rem; }
+    .meta {
+      font-size: .9rem;
+      color: #6c757d;
+    }
+    .footer-note {
+      text-align: center;
+      font-size: .9rem;
+      color: #6c757d;
+      margin: 36px 0 24px;
+    }
+
+    /* ✅ 修正表格樣式 */
+    table {
+      border-collapse: collapse;
+      margin: 0 auto;
+      width: 80%;
+    }
+    th, td {
+      border: 1px solid #000;
+      padding: 8px;
+      text-align: left;
+    }
+    thead {
+      background-color: #f0f0f0;
+    }
+    tbody tr:nth-child(odd) {
+      background-color: #ffffff;
+    }
+    tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    /* ✅ 表格響應式設計 */
+    .table-responsive {
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <main class="container container-narrow">
+    <div class="page-header">
+      <span class="brand-badge">關公斬顏良</span>
+    </div>
+
+    <article class="card">
+      <header class="hero p-4 p-md-5">
+        <h1 class="title display-6 mb-1">關公斬顏良</h1>
+        <p class="subtitle">會說話的石頭</p>
+      </header>
+
+      <!-- ✅ 圖片區塊（置中 + 美化） -->
+      <div class="text-center my-3">
+        <img src="image/018.jpg" 
+             alt="" 
+             class="img-fluid rounded shadow-sm" 
+             style="max-width:400px;">
+        <p class="mt-2 text-muted">圖 關公斬顏良</p>
+      </div>
+
+    
+
+      <div class="content p-4 p-md-5">
+        <p>
+          河北軍閥袁紹的手下猛將，有威名。顏良與文醜一起作為袁紹軍隊的勇將而聞名，孔融曾以顏良、文醜作為袁紹軍隊的武將代表勸諫曹操小心他們。
+200年，袁紹、曹操於官渡交戰。開戰時，謀士沮授勸諫袁紹「顏良性急不可單獨任用」，但是袁紹仍以顏良進攻單獨守護白馬的曹將劉延。（《後漢書·袁紹傳》，《三國志·武帝紀》中顏良是與郭圖、淳于瓊一起進攻。）
+面對這個形勢，曹操採納了謀士荀攸的建議，扮作偷襲袁紹軍隊的後方，率軍先佯裝在延津渡河，誘使袁紹分兵延津，然後，輕兵急進，奔襲白馬，攻其不備。袁軍因為打算防禦進攻的曹軍，顏良的部隊因而孤立地作戰。此時曹軍趁機引兵向白馬疾進，及距白馬十餘里時，顏良大為震驚，倉促迎戰。曹操派將軍張遼為先鋒率先進擊。這時，張遼推薦當時被曹操俘虜的關羽同為先鋒，關羽作為援軍被派遣而跟顏良碰上。據《三國志·關張馬黃趙傳》所載，關羽望見顏良的帥旗後，即單人匹馬殺入敵陣，將其刺死並割下頭顱返回，顏良手下將士因懼怕無人敢擋。曹操亦乘勢揮令大軍衝殺，袁軍因主帥之死而大敗潰散，白馬之圍遂解。
+之前曹操覺得關羽無心久留，讓張遼試探。關羽說自己受厚恩於劉備，不會背棄，也知道曹操厚待自己，決定立功報答曹操再離開。當時劉備依附袁紹。關羽斬殺顏良後，曹操上表為他表功，封漢壽亭侯；因知道他一定會離開，重加賞賜，但關羽將曹操的賞賜全部留下，投奔袁紹軍與劉備會合。
+
+</p>
+        <p>
+          資料來源： https://reurl.cc/ek6DZx
+         </p>
+        <p class="meta" ><a href="index.html" target="">會說話的石頭<a></p>
+      </div>
+    </article>
+
+    <p class="footer-note">會說話的石頭</p>
+  </main>
+</body>
+</html>
